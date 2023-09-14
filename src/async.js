@@ -7,6 +7,13 @@ const url ='https://www.course-api.com/react-tours-project'
 // .then((data) => console.log(data))
 // .catch((err) => console.log(err))
 
+
+
+
+
+
+
+
 //**async function */
 const getTours = async () => {
   try {

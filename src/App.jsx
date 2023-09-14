@@ -1,5 +1,5 @@
 
-import Starter from './tutorial/02-useEffect/starter/04-fetch-data'
+import { List } from "./tutorial/05-leverage-javascript/starter/List"
 
 
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className='container'>
       <h2>
-        <Starter />
+        <List/>
       </h2>
     </div>
   );
