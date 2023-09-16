@@ -1878,7 +1878,7 @@ const OtherInputs = () => {
           submit
         </button>
       </form>
-    </div>
+    </div>                          
   );
 };
 export default OtherInputs;

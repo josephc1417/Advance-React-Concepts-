@@ -1,6 +1,6 @@
 
-import OtherInputs from './tutorial/06-forms/starter/04-other-inputs';
-import MultipleInputs from './tutorial/06-forms/starter/04-other-inputs';
+import OtherInputs from './tutorial/06-forms/starter/05-form-data';
+
 
 
 
