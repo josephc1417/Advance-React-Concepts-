@@ -10,17 +10,13 @@ const MultipleInputs = () => {
   })
 
   const handleChange = (e) => {
-console.log(e.target.name);
-console.log(e.target.name);
-
-
-//destructuring the {user} obj so that all props can be accessed 
-//destructuring the {user} obj so that all props can be accessed 
-setUser({{...user,[e.target.name:e.targe.value]}})
-  
-
+setUser({...user,[e.target.name]:e.target.value})
 }
   
+const handleSubmit =(e) => {
+e.preventDefault()
+console.log(user);
+}
 
 
 
@@ -28,23 +24,24 @@ setUser({{...user,[e.target.name:e.targe.value]}})
 //!MUST!! name should be assigned to the key of value exp: value = {user.name} >> name = 'name'   
   return (
     <div>
-      <form className='form' >
+    
+    <form className='form' onSubmit={handleSubmit} >
         <h4>Multiple Inputs</h4>
-        {/* name */}
+        
         <div className='form-row'>
-          <label htmlFor='name' className='form-label'>
+          <label htmlFor='hello' className='form-label'>
             name
           </label>
           <input type='text' value={user.name} onChange={handleChange} name ='name' className='form-input' id='name' />
         </div>
-        {/* email */}
+        
         <div className='form-row'>
           <label htmlFor='email' className='form-label'>
             Email
           </label>
           <input type='email' value={user.email} onChange={handleChange}  name ='email' className='form-input' id='email' />
         </div>
-        {/* email */}
+        
         <div className='form-row'>
           <label htmlFor='password' className='form-label'>
             Password
