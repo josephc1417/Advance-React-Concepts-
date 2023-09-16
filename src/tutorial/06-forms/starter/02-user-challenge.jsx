@@ -34,12 +34,6 @@ const handelRemove =(id) => {
  setNameData(updatedUsers)
 
 
-}
-
-
-
-
-
 
 //Function return value
   return (
@@ -75,4 +69,9 @@ const handelRemove =(id) => {
         );
       };
       export default UserChallenge;
+      
+
+
+
+
       
