@@ -2,7 +2,12 @@ import { useState } from 'react';
 
 // Creating a list of options that are normally dynamic (coming from an api)
 // rendering the list so that the user can select an option form the list via a checkbox or checked input
-// adding {select} under label element 
+// adding {select} input element under label element
+// iterate over the [frameworks] list [.map] inside select element open and closing tags
+// return options element and add key att set to [.map] param (framework)>> framework names are all different so this will work 
+// use the (value) attribute inside the the select element, instead of (checked) and assign it to the return value you're rendering within the options element
+// add onChange function within the select element to link the event change to the handler function which will update the state value
+// render list [.map] param {framework}
 // goal is to render the list inside of the select input {option element} and when the user selects a box/option >> update the state   
 // your state should reflect the updated value that the user has selected 
 //
@@ -15,9 +20,9 @@ const [shipping, setShipping] = useState(false)
 const [framework, setFramework] = useState('react')
 
 
-//create handler function for framwork
-const handleFramework =() => {
-  // setFramework(e.target.?)
+//create handler function for framework
+const handleFramework =(e) => {
+  setFramework(e.target.value)
 }
 
 const handleFunction =(e) => {
@@ -42,6 +47,14 @@ setShipping(e.target.checked)
           <label htmlFor='framework' className='form-label'>
             Framework
           </label>
+          <select id='framework' name='framework' value={framework} onChange={handleFramework}>
+          {frameworks.map((framework) => {
+            return(
+             <option key={framework}>{framework}</option>
+            )
+          })}       
+          
+          </select>
         </div>
         <button type='submit' className='btn btn-block'>
           submit
