@@ -1,14 +1,15 @@
 
-import MultipleInputs from './tutorial/06-forms/starter/03-multiple-inputs';
+import OtherInputs from './tutorial/06-forms/starter/04-other-inputs';
+import MultipleInputs from './tutorial/06-forms/starter/04-other-inputs';
 
 
 
 
 function App() {
   return (
-    <div className='container'>
+    <div className='container' >
       <h2>
-        <MultipleInputs/>
+        <OtherInputs/>
       </h2>
     </div>
   );
