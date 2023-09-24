@@ -1,20 +1,18 @@
+// Final directory 
+import Final from "./tutorial/09-context-api/final/context/Navbar"
 
-import OtherInputs from './tutorial/08-custom-hooks/starter/'import { todo } from './Testing/todo.test';
-
-
-
+// Starter directory 
+import Starter from "./tutorial/09-context-api/starter/context"
 
 
 function App() {
   return (
-    <div className='container' >
-      <h2>
-        React Testing
-      </h2>
-      <todo />
+    <div className='navbar' >
+      <h5>Context-API</h5>
+        <Final/>
+        <Starter/>
     </div>
-  );
-
+  )
   
 }
 
