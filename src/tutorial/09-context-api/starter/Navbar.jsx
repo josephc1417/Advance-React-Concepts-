@@ -1,13 +1,15 @@
-// <NavLinks/> Functional Component 
+import NavLinks from "./NavLinks"
 
-import { useState } from "react";
-import { NavLinks } from "./NavLinks";
 
-export const Navbar = () => {
 
+
+function Navbar () {
     return (
         <nav className="nav-container">
-            <NavLinks/>
+            <h5>CONTEXT API</h5>
+            <NavLinks />
         </nav>
     )
 }
+
+export default Navbar

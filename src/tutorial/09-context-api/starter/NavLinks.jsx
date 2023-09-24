@@ -1,16 +1,15 @@
-import UserContainer from "./UserContainer";
+import UseContainer from "./UseContainer"
 
-
-export const NavLinks = () => {
+function NavLinks () {
   return (
-    <div>
+    <div className="nav-container">
       <ul className="nav-links">
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+        <li><a href="#">Testing Link</a></li>
+        <li><a href="#">Testing Link</a></li>
+        <UseContainer />
       </ul>
-      <UserContainer />
     </div>
   )
 }
 
-
+export default NavLinks

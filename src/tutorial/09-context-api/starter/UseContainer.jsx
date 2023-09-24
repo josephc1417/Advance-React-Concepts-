@@ -1,9 +1,8 @@
 
-export const UseContainer = () => {
+function UseContainer  () {
   return (
-    <div>
-      UseContainer
-    </div>
+    <div>UseContainer</div>
   )
 }
 
+export default UseContainer;

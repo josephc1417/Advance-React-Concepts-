@@ -1,8 +1,7 @@
-// Final directory 
-import Final from "./tutorial/09-context-api/final/context/Navbar"
+import Final from "./tutorial/09-context-api/final/context/NavbarC"
+import  Starter  from "./tutorial/09-context-api/starter/Navbar";
 
-// Starter directory 
-import Starter from "./tutorial/09-context-api/starter/context"
+
 
 
 function App() {
@@ -13,6 +12,7 @@ function App() {
         <Starter/>
     </div>
   )
+  
   
 }
 

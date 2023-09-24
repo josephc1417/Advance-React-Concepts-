@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import NavLinks from './NavLinks';
+import NavLinks from './NavLinksP';
 
 const Navbar = () => {
   const [user, setUser] = useState({ name: 'bob' });
