@@ -1,13 +1,13 @@
 import UseContainer from "./UseContainer"
 
-function NavLinks () {
+function NavLinks ({ user, logout }) {
   return (
     <div className="nav-container">
       <ul className="nav-links">
-        <li><a href="#">Testing Link</a></li>
-        <li><a href="#">Testing Link</a></li>
-        <UseContainer />
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
       </ul>
+      <UseContainer {...{ user, logout }}/> 
     </div>
   )
 }
