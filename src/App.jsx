@@ -1,6 +1,5 @@
 import Final from './tutorial/09-context-api/Final/context/NavbarC'
-import Navbar from './tutorial/09-context-api/Practice/Prop-Drilling/NavbarP';
-import StarterP from './tutorial/09-context-api/Practice/Prop-Drilling/NavbarP';
+import StarterAPI from './tutorial/09-context-api/Practice/ContextAPI/NavbarCAPI';
 
 
 
@@ -9,8 +8,7 @@ function App() {
     <div className='navbar' >
       <h5>Context-API</h5>
       <Final />
-      <StarterP />
-      <Navbar />
+      <StarterAPI />
     </div>
   )
   
