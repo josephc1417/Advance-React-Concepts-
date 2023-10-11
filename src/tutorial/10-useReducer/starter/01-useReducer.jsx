@@ -1,35 +1,48 @@
 import React from 'react';
 import { data } from '../../../data';
-import { useReducer, useState } from 'react';
+import { useReducer } from 'react';
 
 
 
 // ● (1) - defaultState = lim f(x) = ∞  ● 
 const defaultState = {
   people: data,
-}
+  isLoading:false,
+};
 
 
 // ● (2) - reducer function ● 
-const reducer = () => {
+const reducer = (state,action) => {
+  if(action.type === 'CLEAR_LIST') {
+    return {...state, people: []};
+  }
 }
 
-{/*!(x)ReducerBasics Functional Component*/}
+
 const ReducerBasics = () => {
 
 // ● (3) - useReducer Hook ●   
 const { state, dispatch } = useReducer(reducer, defaultState);
 
 
+// • (x)removeItem (id) • 
+const removeItem = (id) => {
+  // let newPeople = people.filter((person) => person.id !== id);
+  // setPeople(newPeople);
+};
 
-  const removeItem = (id) => {
-    // let newPeople = people.filter((person) => person.id !== id);
-    // setPeople(newPeople);
-  };
+// • (x)clearList {type: 'CLEAR_LIST'} • 
+const clearList = () => {
+  dispatch({ type: 'CLEAR_LIST' });   
+}
 
+// • (x)resetList • 
   const resetList = () => {
-    // setPeople(data);
   }
+
+console.log('====================================');
+console.log(state);
+console.log('====================================');
 
   return (
     <div>
@@ -46,7 +59,7 @@ const { state, dispatch } = useReducer(reducer, defaultState);
         <button
         className='btn'
         style={{ marginTop: '2rem' }}
-        onClick={() => setPeople(data)}
+        onClick={resetList}
       >
         Reset List
       </button>
