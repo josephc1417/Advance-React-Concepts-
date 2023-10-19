@@ -7,13 +7,7 @@ const LowerState = () => {
 
   return (
     <section>
-      <button
-        className='btn'
-        onClick={() => setCount(count + 1)}
-        style={{ marginBottom: '1rem' }}
-      >
-        count {count}
-      </button>
+
       <List people={people} />
     </section>
   );
